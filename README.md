@@ -1,36 +1,80 @@
-# Guenna Ikram — Portfolio
+# Guenna Ikram — Personal Portfolio
 
-Premium, Apple-inspired personal portfolio built around a full-screen background
-video that is scrubbed forward and backward by the page scroll position.
+A modern, Apple-inspired personal portfolio featuring a cinematic, scroll-driven background video, smooth interactions, and a clean, responsive design.
 
-- **Stack**: TanStack Start (React 19) + Vite 7 + Tailwind CSS v4
-- **Pages**: home (hero, about, education, experience, skills, 4 featured
-  projects, achievements, languages, certificates), `/projects` (full gallery),
-  `/contact` (message form + direct links)
-- **Languages**: English, Français, العربية (RTL),  Deutsch, Nederlands
+##  Features
 
-## Media
+- **Interactive Hero Section:** Full-screen background video synchronized with page scrolling.
+- **About Me:** Personal introduction and professional profile.
+- **Education & Experience:** Academic background and professional experience.
+- **Technical Skills:** Technologies, tools, and development expertise.
+- **Featured Projects:** Highlights of selected projects and achievements.
+- **Certificates & Languages:** Certifications and multilingual capabilities.
+- **Project Gallery:** Dedicated `/projects` page showcasing projects.
+- **Contact Page:** Contact form and direct communication links.
+- **Multilingual Support:** English, French, Arabic (RTL), German, and Dutch.
 
-The scroll-driven video and its poster live in `public/media/`:
+##  Tech Stack
 
-| File | Use |
-| --- | --- |
-| `scroll-hero.mp4` | desktop H.264 source, dense keyframes for smooth seeking |
-| `scroll-hero-mobile.mp4` | lighter mobile source |
-| `scroll-hero.webm` | VP9 fallback |
-| `hero-poster.png` | poster / no-video fallback |
+- **Framework:** TanStack Start
+- **Frontend:** React 19
+- **Build Tool:** Vite 7
+- **Styling:** Tailwind CSS v4
+- **Language:** TypeScript
 
-Scrubbing logic lives in `src/components/ScrollVideo.tsx`.
+##  Media Assets
 
-## Development
+The scroll-driven hero video and its poster are located in `public/media/`.
 
-```sh
-npm i
+| File | Purpose |
+|---|---|
+| `scroll-hero.mp4` | Desktop video source (H.264) |
+| `scroll-hero-mobile.mp4` | Optimized mobile video |
+| `scroll-hero.webm` | WebM video fallback |
+| `hero-poster.png` | Poster image and video fallback |
+
+The scroll-based video interaction is implemented in `src/components/ScrollVideo.tsx`.
+
+##  Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ikghaaam/my-portfolio
+cd my-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Build for production:
+### Production Build
 
-```sh
+```bash
 npm run build
 ```
+
+##  Author
+
+**Guenna Ikram**
+
+Full Stack Developer | Information Systems Engineering Student
+
+---
+
+*Designed and developed to showcase my projects, technical skills, and professional journey.*
