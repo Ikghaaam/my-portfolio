@@ -12,4 +12,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Deploy target: Netlify (SSR via Netlify Functions, static assets in dist/).
+  nitro: { preset: "netlify" },
 });
